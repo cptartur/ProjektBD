@@ -1,0 +1,3 @@
+Klienci.PESEL: type: int -> bigint
+Bilety.ID_biletu: identity
+Mandaty.PESEL: type: int -> bigint
