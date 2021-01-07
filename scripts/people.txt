@@ -1,0 +1,11 @@
+VALUES
+('Jason', 'Terry', 54606653193, NULL),
+('Andrew', 'Burton', 66855809604, NULL),
+('Nathan', 'Phelps', 98716926638, NULL),
+('Michael', 'Reed', 83150428590, NULL),
+('Matthew', 'Nielsen', 98280388820, NULL),
+('Madison', 'Rodgers', 11031925436, NULL),
+('Kaitlyn', 'Brown', 41555043595, NULL),
+('Katherine', 'Tyler', 64655015844, NULL),
+('John', 'Perez', 32898169911, NULL),
+('Patricia', 'May', 12415768404, NULL)
