@@ -1,0 +1,52 @@
+INSERT INTO Kierowcy (Imię,Nazwisko,Data_urodzenia,PESEL) 
+VALUES
+('Wojciech','Szlosek','2000-05-01',99050201137),
+('Michał','Noga','1996-02-01',99745678901)
+
+
+INSERT INTO Czas_pracy
+VALUES
+(2,2020,4,160,40),
+(2,2020,5,151,23),
+(2,2020,6,141,22),
+(2,2020,7,130,5),
+(2,2020,8,170,0),
+(3,2019,2,140,28),
+(3,2019,3,160,0),
+(3,2019,4,171,18),
+(3,2019,5,111,0),
+(1,2020,4,111,12),
+(3,2020,4,40,0)
+
+``````````````````````````````````````````
+
+INSERT INTO Kontrolerzy
+VALUES
+('Matthew', 'Anderson'),
+('Robert', 'Kim'),
+('Richard', 'Martin'),
+('Stacey', 'Hunt')
+
+
+INSERT INTO Mandaty (ID_mandatu,Imię,Nazwisko, PESEL, Adres, Kwota,ID_wystawiającego)
+VALUES
+(2,'David', 'Goodman', 20493954800, 'ul. testowa',150,1),
+(3,'Michael', 'Espinoza', 45898474919, 'ul. testowa',150,1),
+(4,'Natasha', 'Perez', 20847776689, 'ul. testowa',150,2),
+(5,'Brianna', 'Luna', 86571589595, 'ul. testowa',150,1),
+(6,'Emma', 'Cortez', 16994500413, 'ul. testowa',150,2),
+(7,'Alan', 'Wallace', 47437497034, 'ul. testowa',150,1),
+(8,'Phillip', 'Moore', 19542546412, 'ul. testowa',150,2),
+(9,'Danielle', 'Vega', 32763745415, 'ul. testowa',150,1),
+(10,'Melanie', 'Alexander', 19002599119, 'ul. testowa',150,2),
+(11,'William', 'Johnson', 29400920396, 'ul. testowa',150,1),
+(12,'David', 'Poole', 81661300557, 'ul. testowa',150,1),
+(13,'Elizabeth', 'Rogers', 86038089904, 'ul. testowa',150,2),
+(14,'Christopher', 'Foster', 28590401023, 'ul. testowa',150,3),
+(15,'Lindsay', 'Oconnor', 10982802358, 'ul. testowa',150,3),
+(16,'Leslie', 'Walker', 66020330491, 'ul. testowa',150,3),
+(17,'Richard', 'Baker', 35776844230, 'ul. testowa',150,4),
+(18,'Jennifer', 'Clarke', 33500323998, 'ul. testowa',150,1),
+(19,'Shannon', 'Robinson', 68740451510, 'ul. testowa',150,4),
+(20,'Adrian', 'Spears', 79190105436, 'ul. testowa',150,4),
+(21,'Larry', 'Barton', 90466899390, 'ul. testowa',150,4)
