@@ -1,5 +1,5 @@
 GO
-CREATE FUNCTION Rozklad_jazdy (@Id_k AS INT)
+CREATE FUNCTION Rozklad_jazdy_kierowcy (@Id_k AS INT)
 RETURNS TABLE
 AS
 RETURN
