@@ -1,6 +1,8 @@
 CREATE OR ALTER TRIGGER wyliczanie_daty_wygasniecia_biletu ON Bilety
 AFTER INSERT
 AS
+	IF (ROWCOUNT_BIG() = 0)
+	RETURN;
 	UPDATE Bilety
 	SET Data_wygaśnięcia = DATEADD (DD, R.Okres_w_dniach, I.Data_zakupu)
 	FROM Bilety AS B
