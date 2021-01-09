@@ -18,6 +18,14 @@ AS
 					WHERE ID_klienta = @Id_klienta)
 	BEGIN
 		RAISERROR('Nie ma takiego klienta',16,2)
+		RETURN;
+	END
+	ELSE IF EXISTS (
+					SELECT * FROM Bilety
+					WHERE ID_klienta = @Id_klienta AND Data_wygaśnięcia>@Data_zakupu)
+	BEGIN
+		RAISERROR('Twój bilet jest już ważny',16,2)
+		RETURN;
 	END
 	ELSE
 	BEGIN
