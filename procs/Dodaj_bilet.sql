@@ -5,4 +5,4 @@ CREATE OR ALTER PROCEDURE Dodaj_bilet
 	@Id_punktu_sprzedaży INT
 AS
 	INSERT INTO Bilety
-	VALUES(@Id_klienta,@Rodzaj_biletu,-1,@Data_zakupu,@Data_zakupu,@Id_punktu_sprzedaży)
+	VALUES(@Id_klienta,@Rodzaj_biletu,-2,@Data_zakupu,@Data_zakupu,@Id_punktu_sprzedaży)
