@@ -5,8 +5,7 @@ CREATE OR ALTER PROCEDURE Dodaj_mandat
 	@PESEL BIGINT,
 	@Adres nvarchar(150),
 	@Kwota MONEY,
-	@Id_kontrolera INT,
-	@Id_klienta INT
+	@Id_kontrolera INT
 AS
 	IF EXISTS (
 				SELECT *
@@ -25,16 +24,8 @@ AS
 		RAISERROR('Próbujesz wystawić mandat na nieistniejącego kontrolera',16,2)
 		RETURN;
 	END
-	ELSE IF NOT EXISTS (
-					SELECT * 
-					FROM Klienci
-					WHERE ID_klienta = @Id_klienta)
-		AND @Id_klienta IS NOT NULL
-	BEGIN
-		RAISERROR('Próbujesz wystawić mandat na nieistniejącego klienta',16,3)
-	END
 	ELSE
 	BEGIN
 		INSERT INTO Mandaty
-		VALUES(@Id_mandatu,@Imię,@Nazwisko,@PESEL,@Adres,@Kwota,@Id_kontrolera,@Id_klienta)
+		VALUES(@Id_mandatu,@Imię,@Nazwisko,@PESEL,@Adres,@Kwota,@Id_kontrolera,NULL)
 	END
