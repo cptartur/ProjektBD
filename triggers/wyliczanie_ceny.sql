@@ -10,7 +10,7 @@ AS
         ON R.Rodzaj_biletu = B.Rodzaj_biletu
     INNER JOIN Klienci AS K
        ON B.ID_klienta = K.ID_klienta
-    INNER JOIN Ulgi AS U
+    LEFT JOIN Ulgi AS U
        ON U.Rodzaj_ulgi = K.Ulga
     INNER JOIN inserted AS I
       ON I.ID_biletu = B.ID_biletu
