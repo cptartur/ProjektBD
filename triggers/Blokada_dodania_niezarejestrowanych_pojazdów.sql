@@ -11,7 +11,7 @@ IF EXISTS (
 	WHERE P.Numer_rejestracyjny IS NULL
 )
 BEGIN
-	RAISERROR ('Nie mo¿na dodaæ niezarejestrowanego pojazdu do linii', 1, 1)
+	RAISERROR ('Nie mo¿na dodaæ niezarejestrowanego pojazdu do linii', 16, 1)
 	ROLLBACK TRANSACTION
 	RETURN
 END;

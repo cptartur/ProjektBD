@@ -5,7 +5,7 @@ CREATE OR ALTER PROCEDURE Dodaj_pojazd
 	@Model NVARCHAR(50),
 	@Data_zakupu DATE,
 	@Numer_rejestracyjny NCHAR(10) = NULL,
-	@ID_zajezdni INT = NULL
+	@ID_zajezdni INT = 1
 AS
 	SET NOCOUNT ON
 	IF @ID_zajezdni IS NOT NULL AND EXISTS (
@@ -49,10 +49,4 @@ AS
 		ELSE
 			RAISERROR ('Wybrana zajezdnia jest pe³na', 1, 1)
 			RETURN
-	END
-	ELSE
-	BEGIN
-		INSERT INTO Pojazdy
-		VALUES
-		(@ID_pojazdu, @Typ_pojazdu, @Producent, @Model, @Data_zakupu, @Numer_rejestracyjny, NULL);
 	END

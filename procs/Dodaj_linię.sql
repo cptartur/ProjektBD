@@ -9,7 +9,7 @@ AS
 		WHERE L.Numer_linii = @Numer_lini
 	)
 	BEGIN
-		RAISERROR ('Linia o takim numerze ju¿ istnieje', 1, 1)
+		RAISERROR ('Linia o takim numerze ju¿ istnieje', 16, 1)
 		RETURN;
 	END
 
@@ -19,5 +19,5 @@ AS
 		VALUES (@Numer_lini, @Typ_pojazdu)
 	END
 	ELSE
-		RAISERROR ('Niepoprawny numer linii', 1, 2)
+		RAISERROR ('Niepoprawny numer linii', 16, 2)
 		RETURN;
