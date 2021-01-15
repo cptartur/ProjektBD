@@ -8,7 +8,7 @@
   - [Spis treści](#spis-treści)
   - [Założenia projektowe](#założenia-projektowe)
   - [Diagram](#diagram)
-  - [Table](#table)
+  - [Tabele](#tabele)
   - [Procedury](#procedury)
   - [Funkcje](#funkcje)
   - [Widoki](#widoki)
@@ -18,7 +18,7 @@
 
 ## Diagram
 
-## Table
+## Tabele
 
 ## Procedury
 
