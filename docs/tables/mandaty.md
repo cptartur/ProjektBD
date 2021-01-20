@@ -15,4 +15,4 @@
 
 ## Opis tabeli
 
-Tablela zawiera informacje o wystawionych mandatach oraz opcjonalnie o klientach które je otrzymali. 
+Tabela zawiera informacje o wystawionych mandatach oraz opcjonalnie o klientach które je otrzymali. 
