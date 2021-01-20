@@ -2,7 +2,7 @@
 
 ## Opis działania
 
-Wybierz z tabeli `Bilety` sumę zysku ze sprzedanych biletów, pogrupowane wedługo lat i miesięcy.
+Wybierz z tabeli `Bilety` sumę zysku ze sprzedanych biletów, pogrupowane według lat i miesięcy.
 
 ## Kod źródłowy
 
