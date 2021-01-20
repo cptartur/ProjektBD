@@ -11,4 +11,4 @@
 
 ## Opis tabeli
 
-Tablela zawiera informacje o przystankach i ich lokalizacjach.
+Tabela zawiera informacje o przystankach i ich lokalizacjach.

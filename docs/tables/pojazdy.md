@@ -14,4 +14,4 @@
 
 ## Opis tabeli
 
-Tablela zawiera podstawowe informacje o pojazdach.
+Tabela zawiera podstawowe informacje o pojazdach.

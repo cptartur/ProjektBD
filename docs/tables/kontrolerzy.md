@@ -10,4 +10,4 @@
 
 ## Opis tabeli
 
-Tablela zawiera informacje o kontrolerach biletów.
+Tabela zawiera informacje o kontrolerach biletów.

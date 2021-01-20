@@ -10,4 +10,4 @@
 
 ## Opis tabeli
 
-Tablela zawiera podstawowe informacje o osobach.
+Tabela zawiera podstawowe informacje o osobach.

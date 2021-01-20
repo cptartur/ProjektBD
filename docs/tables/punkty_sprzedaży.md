@@ -9,4 +9,4 @@
 
 ## Opis tabeli
 
-Tablela zawiera informacje o punktach sprzedaży oraz ich lokalizacjach.
+Tabela zawiera informacje o punktach sprzedaży oraz ich lokalizacjach.

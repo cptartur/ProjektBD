@@ -9,4 +9,4 @@
 
 ## Opis tabeli
 
-Tablela zawiera możliwe typy przystanków.
+Tabela zawiera możliwe typy przystanków.

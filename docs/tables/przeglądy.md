@@ -10,4 +10,4 @@
 
 ## Opis tabeli
 
-Tablela zawiera informacje o ważności przeglądów wszystkich pojazdów.
+Tabela zawiera informacje o ważności przeglądów wszystkich pojazdów.

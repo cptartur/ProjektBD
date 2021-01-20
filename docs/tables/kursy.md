@@ -13,4 +13,4 @@
 
 ## Opis tabeli
 
-Tablela zawiera podstawowe informacje o pojedynczym kursie linii.
+Tabela zawiera podstawowe informacje o pojedynczym kursie linii.

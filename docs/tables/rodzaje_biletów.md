@@ -10,4 +10,4 @@
 
 ## Opis tabeli
 
-Tablela zawiera podstawowe informacje o dostępnych rodzajach biletów (normalny, ulgowy, itd.).
+Tabela zawiera podstawowe informacje o dostępnych rodzajach biletów (normalny, ulgowy, itd.).

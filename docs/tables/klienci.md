@@ -12,4 +12,4 @@
 
 ## Opis tabeli
 
-Tablela zawiera podstawowe informacje o klientach.
+Tabela zawiera podstawowe informacje o klientach.

@@ -14,4 +14,4 @@
 
 ## Opis tabeli
 
-Tablela zawiera informacje o zajezdniach i ich aktualnym stanie zapełnienia. 
+Tabela zawiera informacje o zajezdniach i ich aktualnym stanie zapełnienia. 

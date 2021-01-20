@@ -9,4 +9,4 @@
 
 ## Opis tabeli
 
-Tablela zawiera podstawowe informacje o liniach.
+Tabela zawiera podstawowe informacje o liniach.

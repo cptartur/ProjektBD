@@ -11,4 +11,4 @@
 
 ## Opis tabeli
 
-Tablela zawiera rozkłady jazdy wszystkich kursów wszystkich linii w bazie danych.
+Tabela zawiera rozkłady jazdy wszystkich kursów wszystkich linii w bazie danych.
