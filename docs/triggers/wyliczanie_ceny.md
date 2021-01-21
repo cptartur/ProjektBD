@@ -6,7 +6,7 @@
 
 ## Opis działania
 
-Zaktualizuj cenę biletu o przynależną osobie kupującej bilet ulgę.
+Zaktualizuj cenę biletu w tabeli `Bilety` o przynależną osobie kupującej bilet ulgę.
 
 ## Kod źródłowy
 
