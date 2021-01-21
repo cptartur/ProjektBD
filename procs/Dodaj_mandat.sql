@@ -8,18 +8,18 @@ CREATE OR ALTER PROCEDURE Dodaj_mandat
 	@Id_kontrolera INT
 AS
 	IF EXISTS (
-				SELECT *
-				FROM Mandaty
-				WHERE ID_mandatu = @Id_mandatu)
+		SELECT *
+		FROM Mandaty
+		WHERE ID_mandatu = @Id_mandatu)
 	BEGIN
 		RAISERROR('Mandat o takim ID już istnieje',16,1)
 		RETURN;
 	END
 	ELSE IF NOT EXISTS (
-					SELECT * 
-					FROM Kontrolerzy
-					WHERE ID_kontrolera = @Id_kontrolera)
-	   AND @Id_kontrolera IS NOT NULL
+		SELECT * 		
+		FROM Kontrolerzy
+		WHERE ID_kontrolera = @Id_kontrolera)
+		AND @Id_kontrolera IS NOT NULL
 	BEGIN
 		RAISERROR('Próbujesz wystawić mandat na nieistniejącego kontrolera',16,2)
 		RETURN;
