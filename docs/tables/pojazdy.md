@@ -12,6 +12,10 @@
 | Numer_rejestracyjny | NCHAR(10)    | Tak      | -       | -                              | -                       | Numer rejestracyjny pojazdu                             |
 | ID_zajezdni         | INT          | Tak      | -       | -                              | `Zajezdnie.ID_zajezdni` | ID zajezdni, do której aktualnie przypisany jest pojazd |
 
+## Wyzwalacze
+
+`Dodaj_przegląd AFTER INSERT`
+
 ## Opis tabeli
 
 Tabela zawiera podstawowe informacje o pojazdach.

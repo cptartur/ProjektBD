@@ -12,6 +12,10 @@
 | Data_wygaśnięcia    | DATE         | Nie      | -       | -                              | -                               | Data utraty ważności biletu            |
 | ID_punktu_sprzedaży | INT          | Tak      | -       | -                              | `Punkty_sprzedaży.ID_punktu`    | Data utraty ważności biletu            |
 
+## Wyzwalacze
+
+`Blokada_zakupu_biletu AFTER INSERT`
+
 ## Opis tabeli
 
 Tabela zawiera informacje o aktywnych i wygasłych biletach oraz o ich rzeczywistych cenach (uwzględniających wszystkie ulgi).

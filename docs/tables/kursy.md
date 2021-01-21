@@ -11,6 +11,10 @@
 | Ostatni_przystanek   | NVARCHAR(50) | Nie      | -       | -             | `Przystanki.Nazwa_przystanku` | Nazwa ostatniego przystanku w kursie                      |
 | ID_kierowcy          | INT          | Nie      | -       | -             | `Kierowcy.ID_kierowcy`        | ID_kierowcy, który będzie prowadził pojazd w danym kursie |
 
+## Wyzwalacze
+
+`Blokada_dodania_niezarejstrowanych pojazdów AFTER INSERT`  
+
 ## Opis tabeli
 
 Tabela zawiera podstawowe informacje o pojedynczym kursie linii.
