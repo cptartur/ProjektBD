@@ -3,4 +3,4 @@ SELECT K.ID_kontrolera,K.Imie,K.Nazwisko, COUNT(Kwota) AS [Liczba danych mandatÃ
 FROM Kontrolerzy AS K
 JOIN Mandaty AS M 
 ON K.ID_kontrolera = M.ID_wystawiajÄ…cego
-GROUP BY K.ID_kontrolera,K.Imie,K.Nazwisko, Data_wystawienia
+GROUP BY K.ID_kontrolera,K.Imie,K.Nazwisko, M.Data_wystawienia
