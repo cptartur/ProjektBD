@@ -11,6 +11,7 @@
 | Adres               | NVARCHAR(150)|
 | Kwota               | MONEY        |
 | Id_kontrolera       | INT          |
+| Data_wystawienia    | DATE         |
 
 ## Opis działania
 
@@ -28,7 +29,8 @@ CREATE OR ALTER PROCEDURE Dodaj_mandat
 	@PESEL BIGINT,
 	@Adres nvarchar(150),
 	@Kwota MONEY,
-	@Id_kontrolera INT
+	@Id_kontrolera INT,
+	@Data_wystawienia DATE
 AS
 	IF EXISTS (
 		SELECT *
@@ -50,7 +52,7 @@ AS
 	ELSE
 	BEGIN
 		INSERT INTO Mandaty
-		VALUES(@Id_mandatu,@Imię,@Nazwisko,@PESEL,@Adres,@Kwota,@Id_kontrolera,NULL)
+		VALUES(@Id_mandatu,@Imię,@Nazwisko,@PESEL,@Adres,@Kwota,@Id_kontrolera,NULL,@Data_wystawienia)
 	END
 ```
 
