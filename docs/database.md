@@ -38,6 +38,7 @@ Przyjęte założenia:
 - Bilety sprzedawane są w punktach sprzedaży, które są zlokalizowane tylko na przystankach
 - Przechowywane są tylko informacje o nieuregulowanych mandatach, zapłacone są usuwane
 - Mandat może być wystawiony przez kontrolera istniejącego w bazie danych przedsiębiorstwa lub przez zewnętrznych kontrolerów
+- Numer identyfikacyjny mandatu ustalany jest przez wystawiającego
 - Klient z niezapłaconym mandatem nie może zakupić biletu
 
 ## Diagram
