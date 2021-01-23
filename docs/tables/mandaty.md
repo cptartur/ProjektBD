@@ -11,7 +11,8 @@
 | Adres               | NVARCHAR(150) | Nie      | -       | -                                                    | -                           | Adres ukaranego                     |
 | Kwota               | MONEY         | Nie      | -       | -                                                    | -                           | Kwota mandatu                       |
 | ID_wystawiającego   | INT           | Tak      | -       | -                                                    | `Kontrolerzy.ID_kontrolera` | ID kontrolera wystawiającego mandat |
-| ID_klienta          | INT           | Tak      | -       | -                                                    | `Klienci.ID_klienta` | ID klienta, który otrzymał mandat   |
+| ID_klienta          | INT           | Tak      | -       | -                                                    | `Klienci.ID_klienta`        | ID klienta, który otrzymał mandat   |
+| Data_wystawienia    | DATE          | Nie      | -       | -                                                    | -                           | Data wystawienia mandatu            |
 
 ## Opis tabeli
 
