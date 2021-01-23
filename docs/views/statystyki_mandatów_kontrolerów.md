@@ -2,7 +2,7 @@
 
 ## Opis działania
 
-Tabela z danymi kontrolera, wystawioną liczbą mandatów oraz łącznym zyskiem z mandatów per kontroler uzyskaną w ciągu każdego dnia pracy kontrolera.
+Tabela z danymi kontrolera, wystawioną liczbą mandatów oraz łącznym zyskiem z mandatów uzyskanym w ciągu każdego dnia pracy kontrolera.
 
 ## Kod źródłowy
 
