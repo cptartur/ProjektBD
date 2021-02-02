@@ -1,4 +1,4 @@
-# # Trasa_linii_pojazdu
+# Trasa_linii_pojazdu
 
 ## Parametry wejściowe
 

@@ -1,4 +1,4 @@
-# # Historia_biletow_osoby
+# Historia_biletow_osoby
 
 ## Parametry wejściowe
 
