@@ -18,4 +18,4 @@
 
 ## Opis tabeli
 
-Tabela zawiera informacje o aktywnych i wygasłych biletach oraz o ich rzeczywistych cenach (uwzględniających wszystkie ulgi).
+Tabela zawiera informacje o aktywnych i wygasłych biletach oraz o ich rzeczywistych cenach (uwzględniających wszystkie ulgi). Cena biletów zmienia się w czasie -- aktualna cena biletów jest przechowywana w tabeli `Rodzaje_biletów`, a przy zakupie biletu jest mu przypisywana jego aktualna cena. Po zmianie ceny w `Rodzaje_biletów`, cena w `Bilety` pozostaje bez zmian.
