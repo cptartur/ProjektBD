@@ -2,18 +2,6 @@
 
 <!-- tego nie ruszać, tu będzie główny dokument-->
 
-## Spis treści
-
-- [Dokumentacja bazy MPK](#dokumentacja-bazy-mpk)
-  - [Spis treści](#spis-treści)
-  - [Założenia projektowe i opis](#założenia-projektowe-i-opis)
-  - [Diagram](#diagram)
-  - [Tabele](#tabele)
-  - [Procedury](#procedury)
-  - [Funkcje](#funkcje)
-  - [Widoki](#widoki)
-  - [Wyzwalacze](#wyzwalacze)
-
 ## Założenia projektowe i opis
 
 Baza danych MPK zawiera informacje o działaniu małego przedsiębiorstwa komunikacyjnego. Przechowuje informacje o pojazdach, przystankach, kierowcach i pasażerach, oraz powiązane z tymi zagadnieniami informacje. Największy nacisk położono na informacje o technicznej stronie funkcjonowania przedsiębiorstwa, to jest dokładnych informacjach o istniejących liniach, ich rozkładach jazdy, a także pojazdach oraz ich stanie technicznym.  
@@ -34,7 +22,7 @@ Przyjęte założenia:
 - Przechowywane są informacje tylko o klientach posiadających bilety okresowe
 - Klient może posiadać jedną ulgę, w przypadku różnych ulg wybierana jest najwyższa
 - Przechowywana jest cała historia biletów okresowych, ich aktywność ustala się na podstawie daty wygaśnięcia
-- Cena biletów pobierana jest z osobnej tabeli, może zmieniać się w czasie
+- Cena biletów pobierana jest z osobnej tabeli, __może zmieniać się w czasie__
 - Bilety sprzedawane są w punktach sprzedaży, które są zlokalizowane tylko na przystankach
 - Przechowywane są tylko informacje o nieuregulowanych mandatach, zapłacone są usuwane
 - Mandat może być wystawiony przez kontrolera istniejącego w bazie danych przedsiębiorstwa lub przez zewnętrznych kontrolerów
@@ -44,13 +32,3 @@ Przyjęte założenia:
 ## Diagram
 
 ![diagram](./diagram.png)
-
-## Tabele
-
-## Procedury
-
-## Funkcje
-
-## Widoki
-
-## Wyzwalacze
