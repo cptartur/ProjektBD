@@ -1,4 +1,4 @@
-CREATE VIEW Ranking_Kierowców as
+CREATE OR ALTER VIEW Ranking_Kierowców as
 SELECT Rok, Miesiąc, ROW_NUMBER() 
 	OVER(PARTITION BY Rok,Miesiąc ORDER BY Godziny_pracy+Nadgodziny DESC) as Ranking_Miesiąca,
 K.ID_kierowcy, Imię, Nazwisko, Data_urodzenia, PESEL, Godziny_pracy,Nadgodziny,Godziny_pracy+Nadgodziny AS Sumaryczna_Praca 

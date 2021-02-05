@@ -1,5 +1,4 @@
-GO
-CREATE FUNCTION Historia_biletow_osoby (@klient AS INT)
+CREATE OR ALTER FUNCTION Historia_biletow_osoby (@klient AS INT)
 RETURNS TABLE
 AS
 RETURN
