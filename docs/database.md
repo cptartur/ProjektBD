@@ -2,9 +2,9 @@
 
 <!-- tego nie ruszać, tu będzie główny dokument-->
 
-## Założenia projektowe i opis
+## Opis i założenia projektowe
 
-Baza danych MPK zawiera informacje o działaniu małego przedsiębiorstwa komunikacyjnego. Przechowuje informacje o pojazdach, przystankach, kierowcach i pasażerach, oraz powiązane z tymi zagadnieniami informacje. Największy nacisk położono na informacje o technicznej stronie funkcjonowania przedsiębiorstwa, to jest dokładnych informacjach o istniejących liniach, ich rozkładach jazdy, a także pojazdach oraz ich stanie technicznym.  
+Baza danych MPK zawiera informacje o działaniu małego przedsiębiorstwa komunikacyjnego. Przechowuje informacje o pojazdach, przystankach, kierowcach i pasażerach oraz powiązane z tymi zagadnieniami informacje. Największy nacisk położono na informacje o technicznej stronie funkcjonowania przedsiębiorstwa, to jest o istniejących liniach, ich rozkładach jazdy, a także pojazdach oraz ich stanie technicznym.  
 
 Przyjęte założenia:
 
