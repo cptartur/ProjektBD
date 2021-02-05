@@ -1,4 +1,4 @@
-# Rozklad_jazdy_kierowcy
+# Rozkład_jazdy_kierowcy
 
 ## Parametry wejściowe
 

@@ -9,4 +9,4 @@
 
 ## Opis tabeli
 
-Tabela zawiera informacje o możliwych ulgach i przysługjących w związku z nimi ulgach.
+Tabela zawiera informacje o możliwych ulgach i przysługujących w związku z nimi ulgach.

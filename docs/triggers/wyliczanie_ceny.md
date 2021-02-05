@@ -15,7 +15,7 @@ CREATE OR ALTER TRIGGER wyliczanie_ceny ON Bilety
 AFTER INSERT
 AS
     IF (ROWCOUNT_BIG() = 0)
-	RETURN;
+    RETURN;
     UPDATE Bilety
     SET cena = (CASE WHEN Ulga IS NOT NULL THEN (ROUND(Cena_bazowa*CAST((1-U.Zniżka/100.0) as MONEY),2)) ELSE R.Cena_bazowa END)
     FROM Bilety AS B

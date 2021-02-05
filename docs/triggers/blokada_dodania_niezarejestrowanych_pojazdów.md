@@ -6,7 +6,7 @@
 
 ## Opis działania
 
-Zablokuj możliwość dodawania do kursów pojazdów, które nie mają ustawionego numeru rejestracyjnego. 
+Zablokuj możliwość dodawania do kursów pojazdów, które nie mają ustawionego numeru rejestracyjnego.
 
 ## Kod źródłowy
 
