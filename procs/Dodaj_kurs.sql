@@ -5,23 +5,24 @@ CREATE OR ALTER PROCEDURE Dodaj_kurs
 	@ID_kierowcy INT,
 	@Rozk³ad [Przystanek_w_rozk³adzie] READONLY
 AS
+	SET NOCOUNT ON
 	IF NOT EXISTS (
-		SELECT *
+		SELECT L.Numer_linii
 		FROM Linie AS L
 		WHERE L.Numer_linii = @Nr_linii
 	)
 	BEGIN
-		RAISERROR ('Taka linia nie istnieje', 1, 1)
+		RAISERROR ('Taka linia nie istnieje', 16, 1)
 		RETURN;
 	END
 
 	IF EXISTS (
-		SELECT *
+		SELECT K.Nr_kursu
 		FROM Kursy AS K
-		WHERE (K.Nr_kursu = K.Nr_kursu) AND (K.Numer_linii = @Nr_linii)
+		WHERE (K.Nr_kursu = @Nr_kursu) AND (K.Numer_linii = @Nr_linii)
 	)
 	BEGIN
-		RAISERROR ('Kurs o podanym numerze ju¿ istnieje', 1, 2)
+		RAISERROR ('Kurs o podanym numerze ju¿ istnieje', 16, 2)
 		RETURN;
 	END
 
@@ -32,43 +33,43 @@ AS
 		WHERE (L.Numer_przystanku < R.Numer_przystanku) AND (L.Godzina_odjazdu > R.Godzina_odjazdu)
 	)
 	BEGIN
-		RAISERROR ('Nieprawid³owa kolejnoœæ przystanków', 1, 3)
+		RAISERROR ('Nieprawid³owa kolejnoœæ przystanków', 16, 3)
 		RETURN;
 	END
 
 	IF NOT EXISTS (
-		SELECT *
-		FROM Pojazdy
-		WHERE ID_pojazdu = @ID_pojazdu
+		SELECT P.ID_pojazdu
+		FROM Pojazdy AS P
+		WHERE P.ID_pojazdu = @ID_pojazdu
 	)
 	BEGIN
-		RAISERROR ('Pojazd o podanym ID nie istnieje', 1, 4)
+		RAISERROR ('Pojazd o podanym ID nie istnieje', 16, 4)
 		RETURN;
 	END
 
 	IF NOT EXISTS (
-		SELECT *
-		FROM Kierowcy
-		WHERE ID_kierowcy = @ID_kierowcy
+		SELECT K.ID_kierowcy
+		FROM Kierowcy AS K
+		WHERE K.ID_kierowcy = @ID_kierowcy
 	)
 	BEGIN
-		RAISERROR ('Kierowca o podanym ID nie istnieje', 1, 5)
+		RAISERROR ('Kierowca o podanym ID nie istnieje', 16, 5)
 		RETURN;
 	END
 
 	IF EXISTS (
-		SELECT *
+		SELECT R.Numer_przystanku
 		FROM @Rozk³ad AS R
 		LEFT JOIN Przystanki AS P
 			ON P.Nazwa_przystanku = R.Nazwa_przystanku
 		WHERE P.Nazwa_przystanku IS NULL
 	)
 	BEGIN
-		RAISERROR ('Niektóre z podanych przystanków nie istniej¹', 1, 6)
+		RAISERROR ('Niektóre z podanych przystanków nie istniej¹', 16, 6)
 		RETURN;
 	END
 
-	BEGIN TRY
+	BEGIN
 		DECLARE @Pierwszy_przystanek NVARCHAR(50)
 		DECLARE @Ostatni_przystanek NVARCHAR(50)
 		SET @Pierwszy_przystanek = (
@@ -88,13 +89,4 @@ AS
 		INSERT INTO Rozk³ady_jazdy
 		SELECT @Nr_linii, R.Nazwa_przystanku, @Nr_kursu, R.Godzina_odjazdu
 		FROM @Rozk³ad AS R
-	END TRY
-	BEGIN CATCH
-		SELECT
-			ERROR_NUMBER() AS ErrorNumber,
-			ERROR_STATE() AS ErrorState,
-			ERROR_SEVERITY() AS ErrorSeverity,
-			ERROR_PROCEDURE() AS ErrorProcedure,
-			ERROR_LINE() AS ErrorLine,
-			ERROR_MESSAGE() AS ErrorMessage;
-	END CATCH
+	END

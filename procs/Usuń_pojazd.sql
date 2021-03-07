@@ -6,7 +6,7 @@ AS
 		WHERE ID_pojazdu = @ID_pojazdu
 	)
 	BEGIN
-		RAISERROR('Pojazd nie istnieje', 1, 1)
+		RAISERROR('Pojazd nie istnieje', 16, 1)
 		RETURN
 	END
 
