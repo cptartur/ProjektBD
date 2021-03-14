@@ -8,5 +8,5 @@ Projekt w całości napisany w języku T-SQL
 
 ## Autorzy
 
-* Artur Michałek @cptartur
-* Dawid Urbanik @DayWD
+* Artur Michałek [@cptartur](https://github.com/cptartur)
+* Dawid Urbanik [@DayWD](https://github.com/DayWD)
